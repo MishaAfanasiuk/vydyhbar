@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Vydyh Bar</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brands.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+  <img class="header__logo" src="images/logo.png" />
+
+  <h1 class="header__title">МЕСТО ВСТРЕЧИ НЕЗАБЫВАЕМЫХ ЗАКАТОВ</h1>
+
+  <div class="header__contacts">
+    <div class="header__address">Киев, Малая Житомирская, 6</div>
+    <div class="header__phone">+38 050 414 55 40</div>
+  </div>
+
+  <div class="header__links">
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-google"></i>
+  </div>
+
+  <a class="header__down-arrow" href="#about" onclick="(e) => {e.preventDefault()}">
+    <img src="images/arrow.png" alt="" />
+  </a>
+</header>
+
+<section class="about" id="about">
+  <div>
+    <p>
+      Пара абзацев, десятки строк, сотни знаков отведённых на этой странице для описания ресторана — слишком небольшая квота, чтобы рассказать вам о Маяке. Честное слово!
+    </p>
+
+    <p>
+      Сказать хочется многое, но штампы «прекрасный вид на Днепр» или вот это вот, любимое всеми ресторанными копирайтерами, «авторская и европейская кухня», ну вовсе не прояснят картину для гостя и совсем запутают, если мы захотим похвастаться количеством залов, террас и посадочных мест.
+    </p>
+    <p>
+      Поэтому давайте мы опишем себя вот так: ресторан «Маяк» — место встречи красивых людей.
+      Немного высокопарно, но стоит ли скромничать?
+    </p>
+    <p>
+      Вот так мы решили и хотим, чтоб так было. Ждём вас!
+    </p>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="images/slider/1.jpg" alt="">
+        </li>
+        <li class="splide__slide">
+          <img src="images/slider/2.jpg" alt="">
+        </li>
+        <li class="splide__slide">
+          <img src="images/slider/3.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="menu">
+  <div class="menu__block">
+    <div class="menu__item">
+      Меню
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <div class="map__container">
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__copyright">
+    © Copyright Vydyh.bar
+  </div>
+
+  <a class="footer__phone" title="Позвонить мне" href="tel:0504145540">
+    +38 050 414 55 40
+  </a>
+</footer>
+
+<a class="top-button" href="#" id="scroll-top-button">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="scripts.js"></script>
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.splide', {
+      type   : 'loop',
+      autoWidth: 'true',
+      focus: 'center',
+      pagination: false,
+      padding: {
+        right: '5rem',
+        left : '5rem',
+      },
+    }).mount();
+  } );
+</script>
+</html>
